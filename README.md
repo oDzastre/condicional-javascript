@@ -51,3 +51,18 @@ function nota(nota){
 }
 console.log(nota(5))
 
+function notarecuperacao(nota){
+    //se o aluno tirou 8 = Aprovado
+    //Se tirou acima de 7 e menos que 8 = recuperacao
+    //caso contrario reprovado
+    if(nota >= 8){
+        return 'APROVADO'
+    }
+    else if(nota >= 7){
+        return 'RECUPERACAO'
+    }
+    else{
+        return 'REPROVADO'
+    }
+}
+console.log(notarecuperacao(7,8))
